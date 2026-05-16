@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
 import { Button } from "@/components/ui/button";
@@ -61,21 +62,14 @@ export default async function HomePage() {
       <section className="section-container py-20 md:py-28">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <div className="aspect-square w-full max-w-sm rounded-2xl bg-gradient-to-br from-brand-500/20 to-blue-500/20 flex items-center justify-center border border-border/50">
-              <div className="text-center">
-                <div className="w-24 h-24 mx-auto rounded-full bg-brand-500/10 flex items-center justify-center mb-3">
-                  <svg
-                    className="w-12 h-12 text-brand-500"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={1.5}
-                  >
-                    <path d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
-                  </svg>
-                </div>
-                <p className="text-sm text-muted-foreground">Profilbild</p>
-              </div>
+            <div className="aspect-square w-full max-w-sm rounded-2xl overflow-hidden border border-border/50">
+              <Image
+                src="/images/profil.jpg"
+                alt="Christian Fuchs"
+                width={400}
+                height={400}
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
