@@ -62,7 +62,7 @@ export default async function HomePage() {
       <section className="section-container py-20 md:py-28">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <div className="aspect-square w-full max-w-sm rounded-2xl overflow-hidden border border-border/50">
+            <div className="relative aspect-square w-full max-w-sm rounded-2xl overflow-hidden border border-border/50">
               <Image
                 src="/images/profil.jpeg"
                 alt="Christian Fuchs"
@@ -70,6 +70,7 @@ export default async function HomePage() {
                 height={400}
                 className="w-full h-full object-cover"
               />
+              <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-black/5 dark:ring-white/10 shadow-[inset_0_0_30px_rgba(0,0,0,0.15)]" />
             </div>
           </div>
 
