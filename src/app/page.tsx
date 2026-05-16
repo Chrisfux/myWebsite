@@ -64,7 +64,7 @@ export default async function HomePage() {
           <div>
             <div className="aspect-square w-full max-w-sm rounded-2xl overflow-hidden border border-border/50">
               <Image
-                src="/images/profil.jpg"
+                src="/images/profil.jpeg"
                 alt="Christian Fuchs"
                 width={400}
                 height={400}
